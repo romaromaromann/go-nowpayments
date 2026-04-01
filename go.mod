@@ -1,4 +1,4 @@
-module github.com/CIDgravity/go-nowpayments
+module github.com/romaromaromann/go-nowpayments
 
 go 1.18
 

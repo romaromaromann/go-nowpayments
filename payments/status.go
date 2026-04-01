@@ -1,7 +1,7 @@
 package payments
 
 import (
-	"github.com/CIDgravity/go-nowpayments/core"
+	"github.com/romaromaromann/go-nowpayments/core"
 	"github.com/rotisserie/eris"
 )
 

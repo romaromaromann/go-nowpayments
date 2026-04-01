@@ -5,9 +5,9 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/CIDgravity/go-nowpayments/config"
-	"github.com/CIDgravity/go-nowpayments/core"
-	"github.com/CIDgravity/go-nowpayments/payments"
+	"github.com/romaromaromann/go-nowpayments/config"
+	"github.com/romaromaromann/go-nowpayments/core"
+	"github.com/romaromaromann/go-nowpayments/payments"
 	"github.com/rotisserie/eris"
 )
 

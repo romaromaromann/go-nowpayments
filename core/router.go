@@ -16,7 +16,7 @@ type BaseURL string
 
 const (
 	ProductionBaseURL BaseURL = "https://api.nowpayments.io/v1"
-	SandBoxBaseURL            = "https://api-sandbox.nowpayments.io/v1"
+	SandBoxBaseURL    BaseURL = "https://api-sandbox.nowpayments.io/v1"
 )
 
 // SendParams are parameters needed to build and send an HTTP request to the service
@@ -85,9 +85,7 @@ var routes map[string]routeAttr = map[string]routeAttr{
 	"custody-write-off-to-master":  {http.MethodPost, "/sub-partner/write-off"},
 }
 
-var (
-	defaultURL BaseURL = SandBoxBaseURL
-)
+var defaultURL BaseURL = SandBoxBaseURL
 
 var debug = false
 

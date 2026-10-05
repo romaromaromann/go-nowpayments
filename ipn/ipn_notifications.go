@@ -34,7 +34,7 @@ type IPNPaymentStatus struct {
 	ParentPaymentId    *int64         `json:"parent_payment_id"`
 	PayAddress         string         `json:"pay_address"`
 	PayAmount          float64        `json:"pay_amount"`
-	PayCurrency        string         `json:"pay_currency"`
+	PayCurrency        string         `json:"pay_currency,omitempty"`
 	PayinExtraID       *int64         `json:"payin_extra_id"`
 	PaymentExtraIds    []int64        `json:"payment_extra_ids"`
 	PaymentID          int64          `json:"payment_id"`
@@ -46,7 +46,6 @@ type IPNPaymentStatus struct {
 
 func VerifyRequestSignature(expectedSignature string, ipnNotificationBody IPNPaymentStatus) error {
 	responseBodyAsBytes, err := json.Marshal(ipnNotificationBody)
-
 	if err != nil {
 		return err
 	}

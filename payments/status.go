@@ -16,7 +16,7 @@ type PaymentStatus struct {
 	PriceCurrency  string  `json:"price_currency"`
 	PayAmount      float64 `json:"pay_amount"`
 	ActuallyPaid   float64 `json:"actually_paid"`
-	PayCurrency    string  `json:"pay_currency"`
+	PayCurrency    string  `json:"pay_currency,omitempty"`
 	OrderID        string  `json:"order_id"`
 	PurchaseID     int64   `json:"purchase_id"`
 	CreatedAt      string  `json:"created_at"`
